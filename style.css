@@ -9,14 +9,14 @@ body{
 .container{
     width: 900px;
     position: relative;
-    left: 10%;
+    left: 20%;
     top: 5px;
     background-color: rgb(255, 255, 255);
 }
 
 .con1{
     color: hsl(0, 100%, 100%);
-    height:100vh;
+   
     font-family: 'Fraunces',serif;
     position: relative;
 }
@@ -28,7 +28,6 @@ body{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
     object-fit: cover;
     z-index: 1;
 }
@@ -72,25 +71,23 @@ body{
     height: 25px;
 }
 .con1 h1{
-    position: relative;
+    position: absolute;
     left: 0;
     right: 0;
     text-align: center;
-    top: 100px;
+    top: 115px;
     font-size:48px;
     letter-spacing: 4px;
     text-transform: uppercase;
     z-index: 2;
 }
 .con1 .arrow img{
-    position: relative;
-    top: 150px;
+    position: absolute;
+    top: 210px;
     left: 430px;
     z-index: 2;
 }
-.mobile-header {
-    display: none;
-}
+
 .con2 .egg img{
     width: 450px;
 }
@@ -98,7 +95,7 @@ body{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -55px;
+    top: 500px;
 }
 .con2 .transform{
     padding: 10px 40px;
@@ -122,11 +119,13 @@ body{
     width: 300px;
     font-family: 'Barlow',sans-serif;
     color:hsl(232, 10%, 55%);
+    padding-left: 40px;
 }
 .con2 .transform h4{
     font-size: 10px;
     width: 300px;
      font-family: 'Fraunces',serif;
+     padding-left: 40px;
 }
 .con2 .transform h4:hover{
     text-decoration: 3px solid hsl(51, 100%, 49%) underline;
@@ -139,7 +138,8 @@ body{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: -111px;
+    top: 444px;
+    z-index: 100;
 }
 .con3 .standout{
     padding: 10px 40px;
@@ -157,12 +157,14 @@ body{
 .con3 .standout h2{
     font-family: 'Fraunces',serif;
     width: 300px;
+    
 }
 .con3 .standout p{
     font-size: 12px;
     width: 300px;
     font-family: 'Barlow',sans-serif;
     color:hsl(232, 10%, 55%);
+    
 }
 .con3 .standout h4{
     font-size: 10px;
@@ -175,6 +177,8 @@ body{
 }
 .con4{
     display: flex;
+    position: relative;
+    top: 558px;
 }
 .con4 .cherry{
     position: relative;
@@ -188,7 +192,7 @@ body{
     padding: 20px 40px;
     top: 210px;
     width: 250px;
-    left: 60px;
+    left: 55px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -212,13 +216,14 @@ body{
     padding: 20px 40px;
     top: 210px;
     width: 250px;
-    left: 60px;
+    left: 55px;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 20px;
     color: hsl(198, 62%, 26%);
     font-family: 'Fraunces',serif;
+
 }
 .con4 .orangeleaf .photo p{
     font-size: 12px;
@@ -251,7 +256,7 @@ body{
 }
 #testimonial{
     position: relative;
-    top:10px;
+    top:500px;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -330,6 +335,8 @@ body{
   align-items: flex-start;
   flex-wrap: nowrap;
   padding-top: 70px;
+  position: relative;
+  top: 500px;
 }
 
 .sec1, .sec2 {
@@ -346,7 +353,7 @@ body{
 }
 .ending{
     position: relative;
-   ;
+    top: 500px;
     width: 900px;
     height: 250px;
     color: hsl(167, 34%, 41%);
@@ -415,14 +422,25 @@ body{
     display: flex;
     gap: 50px;
 }
+.mobile-header{
+    display: none;
+    height: 60vh;
+    width: 100%;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     body {
         width: 0;
         padding: 0;
+       
+        
     }
     .container {
-        width: 100vw;
+        width: 440px;
+        left: 0;
+        top: 0;
+        right: 0;
+       
     }
     nav {
         align-items: flex-start;
@@ -475,12 +493,18 @@ body{
     }
 
     .con1 {
-        height: 645px;
+        width: 100%;
+        height: 100%;
     }
-
+.desktop-header{
+    display: none;
+}
+.mobile-header{
+    display: flex;
+}
     .con1 h1 {
         left: 0;
-        top: 165px;
+        top: 140px;
         font-size: 50px;
         text-align: center;
         z-index: 1;
@@ -494,23 +518,16 @@ body{
          color: black;
         opacity: 5;
     }
-    .desktop-header {
-        display: none;
-    }
-    .mobile-header {
-        display: block;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 1;
-    }
+
     .con1 .arrow img {
-        top: 205px;
+       top: 280px;
         left: 45%;
         z-index: 1;
     }
     .con2 {
         flex-direction: column-reverse;
+        top: 0;
+        
     }
     .egg, .cup {
         overflow: hidden;
@@ -525,6 +542,8 @@ body{
     }
     .con3 {
         flex-direction: column;
+        top: 0;
+ 
     }
 
     .con3 .standout {
@@ -532,14 +551,16 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 211px;
+        height: 350px;
         width: 100%;
+        margin-top: 100px;
         margin-left: 0;
         padding: 0 0;
         right: 0;
     }
     .con4{
         flex-direction: column;
+        top: 0;
     }
     .con4 .cherry {
         top: 0;
@@ -549,16 +570,207 @@ body{
     }
     .con4 .cherry img {
         top: 200px;
-        width: 410px;
+        width: 100%;
         object-fit: cover;
     }
     .con4 .orangeleaf img {
         top: 200px;
-        width: 410px;
+        width: 100%;
         object-fit: cover;
     }
+     #testimonial{
+        top: 10px;
+     }
     #testimonial h3{
-        left:30px;
+        left:45px;
+    }
+    #testimonial .writeup{
+        flex-direction: column;
+        
+        gap: 30px;
+    }
+    #testimonial .emily img{
+        left: 116px;
+    }
+    #testimonial .thomas img{
+        left: 116px;
+    }
+    #testimonial .jennie img{
+        left: 116px;
+    }
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 0;
+    }
+    .pictures img {
+        width: 220px;
+        height: 200px;
+    }
+    .ending {
+        width: 100%;
+        top: 0;
+    }
+}
+@media (max-width: 400px) {
+    body {
+        width: 0;
+        padding: 0;
+       
+        
+    }
+    .container {
+        width: 440px;
+        left: 0;
+        top: 0;
+        right: 0;
+       
+    }
+    nav {
+        align-items: flex-start;
+        border-radius: 10px;
+        display: flex;
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    #hamburger {
+        display: block;
+        margin-left: auto;
+        /* position: fixed; */
+        top: 50px;
+    }
+
+    #navlink {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        width: 75%;
+        height: 350px;
+        gap: 20px;
+        background-color: white;
+        padding: 10px 20px;
+        position: absolute;
+        right: 30px;
+        top: 100px;
+        z-index: 2;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    #navlink.show {
+        display: flex;
+    }
+
+    #navlink li {
+        color: black;
+        padding: 5px 10px ;
+    }
+    #navlink li:hover{
+        background-color: hsl(51, 100%, 49%) ;
+        border-radius: 50px;
+        width: 55px;
+    }
+
+    .con1 {
+        width: 100%;
+        height: 100%;
+    }
+.desktop-header{
+    display: none;
+}
+.mobile-header{
+    display: flex;
+    height: 100vh;
+}
+    .con1 h1 {
+        left: 0;
+        top: 180px;
+        font-size: 50px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .con1 nav .navbar ul .co {
+        margin-top: 0;
+    }
+    .con1 nav .navbar ul .co:hover{
+         background-color: hsl(51, 100%, 49%);
+         color: black;
+        opacity: 5;
+    }
+
+    .con1 .arrow img {
+       top: 350px;
+        left: 45%;
+        z-index: 1;
+    }
+    .con2 {
+        flex-direction: column-reverse;
+        top: 0;
+        
+    }
+    .egg, .cup {
+        overflow: hidden;
+    }
+    .egg img {
+        object-fit: cover;
+    }
+    .con2 .transform {
+        text-align: center;
+        width: 80%;
+        margin-left: 0;
+    }
+    .con3 {
+        flex-direction: column;
+        top: 0;
+ 
+    }
+
+    .con3 .standout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 350px;
+        width: 100%;
+        margin-top: 100px;
+        margin-left: 0;
+        padding: 0 0;
+        right: 0;
+    }
+    .con4{
+        flex-direction: column;
+        top: 0;
+    }
+    .con4 .cherry {
+        top: 0;
+    }
+    .con4 .orangeleaf {
+        top: -4px;
+    }
+    .con4 .cherry img {
+        top: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .con4 .orangeleaf img {
+        top: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+     #testimonial{
+        top: 10px;
+     }
+    #testimonial h3{
+        left:45px;
     }
     #testimonial .writeup{
         flex-direction: column;
@@ -575,15 +787,18 @@ body{
     }
     .pictures{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
+        top: 0;
     }
     .pictures img {
-        width: 200px;
+        width: 220px;
         height: 200px;
     }
     .ending {
         width: 100%;
+        top: 0;
     }
 }
